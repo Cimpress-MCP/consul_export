@@ -11,7 +11,7 @@ process.on('uncaughtException', /* istanbul ignore next */ function(err) {
 });
 
 var config = {
-  outputters: ['hosts']
+  outputters: ['hosts', 'maradns']
 };
 
 consul_export.run(config);
