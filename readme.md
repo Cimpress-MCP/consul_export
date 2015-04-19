@@ -12,7 +12,7 @@ Before we can be comfortable using Consul for critical infrastructure, we need a
 
 consul_export is a tool for backing up critical data from [Consul](consul.io) so that you can have a standby available in the event of catastrophic cluster failure.
 
-consul_export lets us run a warm standby of Consul DNS by exporting the current state of the cluster as static configuration for an alternative DNS server like BIND.
+consul_export lets us run a warm standby of Consul DNS by exporting the current state of the cluster as static configuration for an alternative DNS server like BIND.  This server can be switched in to replace Cosnul should the cluster lose the ability to serve DNS records.
 
 ##### Limitations
 
