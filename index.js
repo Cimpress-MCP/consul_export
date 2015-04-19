@@ -10,8 +10,4 @@ process.on('uncaughtException', /* istanbul ignore next */ function(err) {
   logger.error(err);
 });
 
-var config = {
-  outputters: ['hosts', 'maradns', 'bind']
-};
-
-consul_export.run(config);
+consul_export.run();

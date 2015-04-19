@@ -22,6 +22,7 @@
   "homepage": "https://github.com/cimpress-mcp/consul_backup",
   "dependencies": {
     "bunyan": "^1.3.5",
+    "minimist": "^1.1.1",
     "request": "^2.55.0",
     "underscore": "^1.8.3"
   }
