@@ -1,7 +1,7 @@
 {
-  "name": "consul_backup",
+  "name": "consul_export",
   "version": "0.0.1",
-  "description": "Generate static DNS routes as a worst-case scenario failsafe if a Consul cluster goes offline.",
+  "description": "Export information from Consul to be used for disaster recovery.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
