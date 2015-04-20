@@ -1,6 +1,6 @@
 var consul_export = require('./lib/');
 
-var logger = require('./lib/logger.js').getLogger({'module': __filename});
+var logger = require('./lib/util/logger.js').getLogger({'module': __filename});
 
 // Register the catch-all exception handler.  We want to ignore this line for code coverage purposes,
 // which the instanbul ignore line accomplishes.
