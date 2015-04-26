@@ -18,7 +18,11 @@ consul_export lets us run a warm standby of Consul DNS by exporting the current 
 
 Currently, consul_export is focused exclusively on exporting entries from Consul DNS.  It would be nice to extend it to support K/V export or ACL export.
 
-Also, it's important to note that consul_export is targeted at enabling external systems to run using state extracted from Consul: in the future, perhaps consul_export should support reading in its own state and repopulating a Consul cluster.
+Also, it's important to note that consul_export is targeted at enabling external systems to run using state extracted from Consul: in the future, perhaps consul_export should support reading in backup state and repopulating a Consul cluster.
+
+##### TODO
+
+- [ ] Add backup state files
 
 ##### CI
 
