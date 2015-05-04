@@ -23,6 +23,8 @@ Also, it's important to note that consul_export is targeted at enabling external
 ##### TODO
 
 - [ ] Add backup state files
+- [x] Do not export if errors occur
+- [ ] Add daemon mode
 
 ##### CI
 
