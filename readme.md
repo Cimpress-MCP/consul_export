@@ -22,31 +22,31 @@ If no configuration file is found at any of those locations, consul_export will 
 
 ```json
 {
-  'consul': {
-    'host': 'localhost',
-    'port': '8500',
-    'dc': 'dc1'
+  "consul": {
+    "host": "localhost",
+    "port": "8500",
+    "dc": "dc1"
   },
-  'daemon': true,
-  'dns': {
-    'outputters': [{
-      'type': 'hosts',
-      'path': [user home directory],
-      'filename' : 'hosts',
-      'preamble': [
-        '127.0.0.1\t\tlocalhost'
+  "daemon": true,
+  "dns": {
+    "outputters": [{
+      "type": "hosts",
+      "path": [user home directory],
+      "filename" : "hosts",
+      "preamble": [
+        "127.0.0.1\t\tlocalhost"
       ],
-      'backup': {
-        'path': [system temp directory],
-        'basename': 'hosts'
+      "backup": {
+        "path": [system temp directory],
+        "basename": "hosts"
       }
     },{
-      'type': 'bind',
-      'path': [user home directory],
-      'filename': 'db.consul',
-      'backup': {
-        'path': [system temp directory],
-        'basename': 'db.consul'
+      "type": "bind",
+      "path": [user home directory],
+      "filename": "db.consul",
+      "backup": {
+        "path": [system temp directory],
+        "basename": "db.consul'
       }
     }]
   }
