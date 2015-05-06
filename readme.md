@@ -61,7 +61,7 @@ The `dns` block defines a set of outputters for emitting Consul data for externa
 
 Each outputter defines a `path`, the root directory in which the file will be output, as well as a `filename`.  In the case of the `hosts` outputter, you can also define a `preamble`, an array of lines that will be written at the start of the file.  This is useful because `/etc/hosts` files start with a mapping of localhost to 127.0.0.1.  You can extend this to add additional static configuration that you know must be in your hosts file.
 
-Each outputter can also define a `backup` stanza.  Based on the `path` and `basename` provided, the backup policy will create hourly, daily, and weekly backups of the output file.  The names of these backup files are the concatenation of `path`, `basename`, type (weekly|daily|hourly), and timestamp.  For example, the hourly backup for a hosts file with `basename` "hosts" at `path` "/tmp" might be named "/tmp//hosts.hourly.20150506T2037".
+Each outputter can also define a `backup` stanza.  Based on the `path` and `basename` provided, the backup policy will create hourly, daily, and weekly backups of the output file.  The names of these backup files are the concatenation of `path`, `basename`, type (weekly|daily|hourly), and timestamp.  For example, the hourly backup for a hosts file with `basename` "hosts" at `path` "/tmp" might be named `/tmp/hosts.hourly.20150506T2037`.
 
 ##### Limitations
 
