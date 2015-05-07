@@ -74,6 +74,7 @@ Also, it's important to note that consul_export is targeted at enabling external
 - [x] Add backup state files
 - [x] Do not export if errors occur
 - [x] Add daemon mode
+- [ ] Add a configurable timeout to data collection and output generation
 
 ##### CI
 
