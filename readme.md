@@ -16,7 +16,7 @@ consul_export lets us run a warm standby of Consul DNS by exporting the current 
 
 ##### Configuration
 
-consul_export is driven by a JSON configuration file.  The path to this file can be specified with the `-c [config file]` or `--config_file [config file]` command-line switches.  If no command-line switch is provided, consul_export will also look at the `CONSUL_EXPORT_CONFIG_FILE` environment variable.  Failing all of that, it will look for a configuration file at `/etc/consul_export.conf`.
+consul_export is driven by a JSON configuration file.  The path to this file can be specified with the `-c [config file]` or `--config_file [config file]` command-line switches.  If no command-line switch is provided, consul_export will then look at the `CONSUL_EXPORT_CONFIG_FILE` environment variable.  If no configuration file was specified, consul_export will assume a path of `/etc/consul_export.conf`.
 
 If no configuration file is found at any of those locations, consul_export will use the following default:
 
