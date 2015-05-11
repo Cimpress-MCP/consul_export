@@ -1,6 +1,6 @@
 {
   "name": "consul_export",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "description": "Export information from Consul to be used for disaster recovery.",
   "main": "index.js",
   "scripts": {
